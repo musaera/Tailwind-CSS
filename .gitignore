@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# TailwindCSS build output
+dist/
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
+# Build directories
+build/
+out/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
