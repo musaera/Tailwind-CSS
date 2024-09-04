@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Installation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-blue-400">
-    <h1 class="text-black text-center">Tailwind CSS Installation</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Styling</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-blue-400 text-gray-900">
+    <!-- Navbar -->
+    <nav
+      class="bg-blue-500 text-white fixed w-full top-0 left-0 z-10 flex items-center justify-between px-4 py-2"
+    >
+      <div class="text-xl font-bold">Logo</div>
+      <div class="space-x-4">
+        <a href="#home" class="hover:text-blue-200">Home</a>
+        <a href="#about" class="hover:text-blue-200">About</a>
+        <a href="#services" class="hover:text-blue-200">Services</a>
+        <a href="#contact" class="hover:text-blue-200">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('https://picsum.photos/1920/1080')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+      >
+        <h1 class="text-white text-4xl md:text-6xl font-bold text-center">
+          Welcome to Our Website
+        </h1>
+      </div>
+    </section>
+
+    <!-- Header -->
+    <header class="bg-blue-500 text-white py-4 text-center mt-4">
+      <h1 class="text-xl font-bold">Header</h1>
+    </header>
+
+    <!-- Section -->
+    <section class="w-full p-8 grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+      <div class="col-span-1">
+        <img
+          src="https://picsum.photos/400/300"
+          alt="Image"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="col-span-3">
+        <p class="text-gray-700">
+          This is the section text. Add your content here.
+        </p>
+      </div>
+    </section>
+
+    <!-- Button -->
+    <div class="text-center mt-6">
+      <button
+        class="bg-blue-300 text-white py-2 px-4 rounded hover:bg-blue-400"
+      >
+        Click Me
+      </button>
+    </div>
+
+    <!-- Content Section -->
+    <section class="p-8 grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+      <div class="bg-white p-4 shadow-lg rounded">
+        <h2 class="text-xl font-bold mb-2">Article 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="bg-white p-4 shadow-lg rounded">
+        <h2 class="text-xl font-bold mb-2">Article 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="bg-white p-4 shadow-lg rounded">
+        <h2 class="text-xl font-bold mb-2">Article 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </section>
+  </body>
 </html>
